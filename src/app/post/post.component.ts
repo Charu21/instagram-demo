@@ -8,7 +8,7 @@ import { POSTS } from '../appData/posts';
 })
 export class PostComponent implements OnInit {
 posts = POSTS;
-liked = false;
+
   constructor() { 
     console.log(this.posts);
   }
