@@ -1,0 +1,43 @@
+.circular--square {
+    border-radius: 50%;
+    align-self: center;
+    cursor: pointer;
+  }
+
+.navbar{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.username{
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    display: inline;
+    background-color: transparent;
+    user-select: auto;
+}
+
+#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+    z-index: 8;
+}
+
+a {
+    display: inline-block;
+}
+
+.text-nowrap {
+    white-space: nowrap !important;
+}
+#outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display: inline-block;
+}

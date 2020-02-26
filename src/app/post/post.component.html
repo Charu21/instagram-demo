@@ -1,0 +1,57 @@
+    <div id="page-wrap">
+    <ul class="list-group list-group-flush content">
+    <!--
+        *ngfor is an angular directive that
+        allows you to put javascript loops into HTML
+    -->
+    <section>
+        <!-- <li class="list-group-item" *ngFor="let post of posts">
+            <img 
+            class="circular--square" [src]="post.profilePhoto"
+            [alt]="post.title"
+            width="100px"> <b> {{post.title}}</b>
+        </li> -->
+        <li class="list-group-item" *ngFor="let post of posts">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#"> <img 
+                    class="circular--square" [src]="post.profilePhoto"
+                    [alt]="post.title"
+                    width="70px"> <div class="username"> &nbsp; &nbsp; {{post.username}} </div> </a>
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+            <section>
+                <a class="navbar-brand" href="#"> <img 
+                    [src]="post.photo"
+                    [alt]="post.title" 
+                    width="100%" height="100%"> 
+                    <div id="outer">
+                        <div class="inner">
+                            <button class="btn"><i class='fa fa-comment' style='font-size:36px; color:black'></i></button>
+                        </div>
+                        <div class="inner">
+                            <button class="btn" (click)="toggleLike(post)"><div *ngIf="post.showLike; else other_content">
+                                <i class="fa fa-heart" style="font-size:36px; color:black"></i>
+                                </div>
+                                <ng-template #other_content>
+                                 <i class="fa fa-heart-o" style="font-size:36px; color:black"></i>
+                                </ng-template></button>
+                                
+                        </div>
+                        <div class="inner">
+                            <button class="btn"><i class="fa fa-share-alt" style="font-size:36px; color:black"></i></button>
+                        </div>
+                    </div>
+                    
+                    <h6> {{post.title}} </h6> </a>
+                    <p> {{post.description}} </p>
+            </section>
+        </li>
+    </section>
+</ul>
+</div>

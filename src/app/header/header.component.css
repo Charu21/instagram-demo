@@ -1,0 +1,19 @@
+.img-style{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 5vh;
+}
+
+.navbar{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+#insta-message{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10%;
+    height: 8vh;
+}
